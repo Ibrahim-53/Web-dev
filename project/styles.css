@@ -1,0 +1,461 @@
+body{
+    cursor: default;
+}
+.header{
+    color: black;
+    background-color: darkslategrey;
+    height: 150px;
+}
+.h1{
+    text-align: center;
+}
+.logo{
+    width: 150px;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+  .menu{
+    background-color:black;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5 5%;
+  }
+  .menu ul{
+    list-style: none;
+    display: flex;
+  }
+  .menu ul li{
+    padding: 30px 30px;
+    position: relative;
+    position: top sticky;
+  }
+  
+.menu ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: all 0.3s;
+}
+.menu ul li a:hover{
+  color: var(--color-primary);
+}
+.dropdown{
+  display: none;
+}
+.menu ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color:black ;
+}
+.dropdown ul{
+  display: block;
+  margin: 10px;
+}
+.dropdown ul li{
+  width: 150px;
+  padding: 10px;
+}
+.fa{
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.picone{
+  position: relative;
+  object-fit: cover;
+  
+}
+.picone img{
+  background-size: cover;
+  max-height: 500px;
+  width: 100%;
+  z-index: 1;
+}
+
+.objectives{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  position: absolute;
+  bottom:  0px;
+  margin: auto;
+  width: 35% 35%;
+  left:  45%;
+}
+.objectives a{
+  font-size: 20px;
+  color: orangered;
+  text-decoration: none;
+  transition: all 0.3s
+}
+.objectives a:hover{
+  color: var(--color-primary)
+}
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-top: 60px;
+  
+}
+
+.second h3{
+  color: black;
+  text-align: center;
+  
+}
+
+.our-story{
+  height: 600px;
+}
+
+.our-story img{
+  float: right;
+  width: 45%;
+  height: 500px;
+  object-fit: cover;
+}
+.our-story .btn{
+  color: white;
+  background-color: black;
+}
+.cell{
+  width: 33%;
+  height: 550px;
+  margin: 0 15px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.cell img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.third h3{
+  color: black;
+  text-align: center;
+}
+body h3{
+  color: black;
+}
+.end h3{
+  text-align: center;
+}
+ .social-menu ul img{
+  list-style: none;
+  margin: 0 15px;
+ }
+ 
+ footer{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .container{
+  max-width: 1170px;
+  
+  margin: auto;
+ }
+ .row{
+  display: flex;
+  flex-wrap: wrap;
+ }
+ ul{
+  list-style: none;
+ }
+
+
+ .footer{
+  line-height: 1.5;
+  font-family:  sans-serif;
+  background-color: #24262b;
+  padding: 70px 0;
+ }
+ .footer-col{
+   width: 25%;
+   padding: 0 15px;
+ }
+ .footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+
+ }
+ .footer-col h4 ::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: orangered;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+ }
+.footer-col ul li :not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+ }
+ .footer-col .social-links a:hover{
+   color: #24262b;
+   background-color: #ffffff;
+ }
+ 
+ /*responsive */
+ @media(max-width: 767px){
+  .logo{
+    display: none;
+}
+  .header{
+    width: 100%;
+    position: relative;
+  }
+  .header input{
+    width: fit-content;
+    position: relative;
+  }
+  .menu{
+    background-color:black;
+    height: 500px;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5 5%;
+  }
+  .menu ul{
+    list-style: none;
+    display: inline-block;
+  }
+  .menu{
+    font-size: 10px;
+    width: 100%;
+  }
+  .menu li {
+    display: block;
+  }
+  .menu ul li:hover .dropdown{
+    display: none;
+  }
+  .menu i{
+    display: none;
+  }
+  .picone{
+    position: relative;
+    width: 100%;
+    
+  }
+  .picone img{
+    
+    height: 450px;
+    width: 100%;
+    z-index: 1;
+  }
+  .objectives{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    position: absolute;
+    bottom:  0px;
+    margin: auto;
+    width: 35% 35%;
+    left:  35%;
+  }
+  .main-carousel{
+    height: 700px;
+  }
+  .cell img{
+    width: 100%;
+    overflow: hidden;
+  }
+  .cell .describe{
+    font-size: 9px;
+  }
+  .cell{
+    font-size: 14px;
+    height: fit-content;
+  }
+  .picone{
+    position: relative;
+    width: 100%;
+  }
+  .objectives{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    position: absolute;
+    bottom:  0px;
+    margin: auto;
+    width: 35% 35%;
+    left:  22%;
+  }
+  
+  .cell p{
+    font-size: 10px;
+  }
+  
+  .our-story{
+    height: 1050px;
+  }
+  
+  .social-menu{
+    display: inline-flex;
+  }
+  .social-menu img{
+    width: 17%;
+  }
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+ }
+ @media(max-width: 1205px){
+  .logo{
+    display: none;
+}
+  .header{
+    width: 100%;
+    position: relative;
+  }
+  .header input{
+    width: fit-content;
+   
+  }
+  .menu{
+    background-color:black;
+    height: 500px;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5 5%;
+  }
+  .menu ul{
+    list-style: none;
+    display: inline-block;
+  }
+  .menu{
+    font-size: 10px;
+    width: 100%;
+  }
+  .menu li {
+    display: block;
+  }
+  .menu ul li:hover .dropdown{
+    display: none;
+  }
+  .menu i{
+    display: none;
+  }
+  .picone{
+    position: relative;
+    width: 100%;
+    
+  }
+  .picone img{
+    
+    height: 450px;
+    width: 100%;
+    z-index: 1;
+  }
+  .objectives{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    position: absolute;
+    bottom:  0px;
+    margin: auto;
+    width: 35% 35%;
+    margin-left:  50%;
+    
+  }
+  .main-carousel{
+    margin-left: 0;
+    height: 680px;
+  }
+  .cell img{
+    width: 100%;
+    overflow: hidden;
+  }
+  .cell .describe{
+    font-size: 10px;
+  }
+  .cell{
+    font-size: 15px;
+    height: fit-content;
+  }
+  .picone{
+    position: relative;
+    width: 100%;
+  }
+  .objectives{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    position: absolute;
+    bottom:  0px;
+    margin: auto;
+    width: 35% 35%;
+    left:  35%;
+  }
+  .our-story{
+    height: fit-content;
+  }
+  .social-menu{
+    display: inline-flex;
+  }
+  .social-menu img{
+    width: 20%;
+  }
+  .footer-col{
+    width: 100%;
+  }
+ }
+ 
+ 
